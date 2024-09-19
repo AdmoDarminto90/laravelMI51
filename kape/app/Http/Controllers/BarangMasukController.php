@@ -12,7 +12,12 @@ class BarangMasukController extends Controller
      */
     public function index()
     {
-        //
+        //panggil model barang
+        $hasil=Barang_Masuk::all();
+        //cek isi variabel $hasil
+        //dd($hasil);
+        return view('Barang_Masuk.index')->with('hasil',$hasil);
+
     }
 
     /**

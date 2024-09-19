@@ -12,7 +12,12 @@ class DitelBarangMasukController extends Controller
      */
     public function index()
     {
-        //
+        //panggil model barang
+        $hasil=ditel_barang__masuk::all();
+        //cek isi variabel $hasil
+        //dd($hasil);
+        return view('ditel_barang__masuk.index')->with('hasil',$hasil);
+
     }
 
     /**
