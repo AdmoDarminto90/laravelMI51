@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\BarangMasukController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Barang;
 use Illuminate\Support\Facades\Route;
@@ -20,5 +21,5 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('/Barang',BarangController::class);
-Route::resource('/Barang_Masuk',BarangController::class);
+Route::resource('/Barang_Masuk',BarangMasukController::class);
 require __DIR__.'/auth.php';

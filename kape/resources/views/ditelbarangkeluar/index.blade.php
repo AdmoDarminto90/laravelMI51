@@ -1,7 +1,7 @@
 <table class="table">
     <tr>
-        <th>Barang_Masuk_id</th>
-        <th>Barang_id</th>
+        <th>tanggal</th>
+        <th></th>
         <th>Jumlah</th>
         <th>kondisi</th>
     </tr>

@@ -16,7 +16,7 @@ class BarangMasukController extends Controller
         $hasil=Barang_Masuk::all();
         //cek isi variabel $hasil
         //dd($hasil);
-        return view('Barang_Masuk.index')->with('hasil',$hasil);
+        return view('BarangMasuk.index')->with('hasil',$hasil);
 
     }
 
